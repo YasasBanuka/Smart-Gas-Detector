@@ -1,6 +1,6 @@
+## License
 ![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)
 
-## License
 
 Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)
 
