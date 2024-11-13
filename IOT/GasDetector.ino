@@ -3,8 +3,8 @@
 #include <ArduinoJson.h>
 
 // Add network credentials
-const char* ssid = "SLT_FIBER_7K6XB";
-const char* password = "jTxTk98n";
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
 
 // Define the gas sensor pin (analog input)
 const int gasSensorPin = 34; // Use the appropriate pin for MQ-02 sensor
@@ -35,7 +35,7 @@ void setup() {
 // Function to send gas level data to the backend
 void sendGasDataToServer(float gasLevel) {
   HTTPClient http;
-  String serverUrl = "http://192.168.1.2:8181/GasDetector/gasStatus"; // Update with server URL(Make it local host -> IP)
+  String serverUrl = "http://192.1##.#.#:####/GasDetector/gasStatus"; // Update with server URL(Make it local host -> IP)
   String level = String(gasLevel);
   String status = (gasLevel >= gasThreshold) ? "Danger" : "Safe";
 
