@@ -48,3 +48,48 @@ The frontend is a mobile app built with React Native and Expo, providing a user 
 
 - **Technology**: React Native, Expo, JavaScript
 - **Main Function**: Display real-time gas level data, alert users of dangerous levels, and offer personalized access through user login.
+
+  
+### Backend - API & Database (Java EE & MySQL)
+The Java EE backend serves as the core data management system, handling sensor data processing, storing records in a MySQL database, and exposing REST APIs for the frontend. It also manages user authentication and profile data.
+
+- **Technology**: Java EE (NetBeans), MySQL
+- **Database Structure**: Includes tables for storing gas level data, user information, and historical records.
+- **Main Function**: Manage gas level data, handle API requests, user management, and data persistence.
+
+---
+
+## Setup Guide
+
+### IoT Setup
+1. **Install Arduino IDE** if not installed.
+2. Connect the gas sensor to the Arduino board.
+3. Upload the Arduino code located in the `iot` folder to the Arduino board.
+4. Test the sensor connections and ensure data is being transmitted to the backend.
+
+### Frontend Setup
+1. **Install Node.js** and **Expo CLI**:
+   ```bash
+   npm install -g expo-cli
+
+2. In the frontend directory, **install dependencies**:
+   ```bash
+   npm install
+   
+3. **Start the Expo server for the mobile app**:
+   ```bash
+    expo start
+
+Use the Expo app on a mobile device or an emulator to view and test the app.
+
+### Backend Setup
+1. **Install NetBeans IDE** and ensure it supports Java EE.
+2. **Update connection details** in the App.config or environment configuration file.
+3. **Deploy the backend on a Java EE-compatible server** (e.g., GlassFish or WildFly).
+4. **Start the server** and ensure APIs are accessible for the frontend and IoT parts.
+
+Future Enhancements
+1. **Push Notifications**: Integrate push notifications for high-priority gas alerts.
+2. **Data Visualization**: Add graphical representations of gas level trends over time.
+3. **Multiple Device Integration**: Expand to support multiple gas sensors across different locations.
+4. **Advanced User Settings**: Enable customizable alert thresholds for different gases.
